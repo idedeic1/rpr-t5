@@ -12,7 +12,7 @@
    <children>
       <HBox layoutY="14.0" prefHeight="50.0" prefWidth="401.0">
          <children>
-            <Label prefHeight="50.0" prefWidth="400.0">
+            <Label fx:id="result" prefHeight="50.0" prefWidth="400.0">
                <font>
                   <Font size="24.0" />
                </font>
@@ -22,10 +22,10 @@
          <children>
             <ButtonBar prefHeight="50.0" prefWidth="351.0">
               <buttons>
-                  <Button minWidth="70.0" mnemonicParsing="false" prefHeight="25.0" text="\%" />
-                  <Button minWidth="70.0" mnemonicParsing="false" prefHeight="25.0" text="/" />
-                  <Button minWidth="70.0" mnemonicParsing="false" prefHeight="25.0" text="x" />
-                <Button minWidth="70.0" mnemonicParsing="false" prefHeight="25.0" text="-" />
+                  <Button minWidth="70.0" mnemonicParsing="false" onAction="#processOperator" prefHeight="25.0" text="\%" />
+                  <Button minWidth="70.0" mnemonicParsing="false" onAction="#processOperator" prefHeight="25.0" text="/" />
+                  <Button minWidth="70.0" mnemonicParsing="false" onAction="#processOperator" prefHeight="25.0" text="x" />
+                <Button minWidth="70.0" mnemonicParsing="false" onAction="#processOperator" prefHeight="25.0" text="-" />
               </buttons>
             </ButtonBar>
          </children></HBox>
@@ -64,7 +64,7 @@
             <ButtonBar prefHeight="50.0" prefWidth="243.0">
                <buttons>
                   <Button mnemonicParsing="false" prefHeight="41.0" prefWidth="105.0" text="0" />
-                  <Button mnemonicParsing="false" prefHeight="41.0" prefWidth="105.0" text="." />
+                  <Button mnemonicParsing="false" onAction="#processOperator" prefHeight="41.0" prefWidth="105.0" text="." />
                </buttons>
             </ButtonBar>
          </children></HBox>
@@ -73,7 +73,7 @@
          <children>
             <ButtonBar prefHeight="127.0" prefWidth="75.0">
               <buttons>
-                <Button lineSpacing="5.0" minWidth="67.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="75.0" text="+" />
+                <Button lineSpacing="5.0" minWidth="67.0" mnemonicParsing="false" onAction="#processOperator" prefHeight="100.0" prefWidth="75.0" text="+" />
               </buttons>
             </ButtonBar>
          </children></VBox>
@@ -81,7 +81,7 @@
          <children>
             <ButtonBar prefHeight="129.0" prefWidth="100.0">
               <buttons>
-                <Button lineSpacing="5.0" minWidth="45.0" mnemonicParsing="false" prefHeight="100.0" prefWidth="75.0" text="=" textFill="#252121" />
+                <Button lineSpacing="5.0" minWidth="45.0" mnemonicParsing="false" onAction="#processOperator" prefHeight="100.0" prefWidth="75.0" text="=" textFill="#252121" />
               </buttons>
             </ButtonBar>
          </children></VBox>
