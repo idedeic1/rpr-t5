@@ -1,5 +1,12 @@
 package ba.unsa.etf.rpr.tutorijal05;
 
-public class Controller {
+import javafx.event.ActionEvent;
 
+public class Controller {
+        public void processNumbers(ActionEvent event){
+
+        }
+        public void processOperator(ActionEvent event){
+
+        }
 }
