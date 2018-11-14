@@ -7,7 +7,7 @@ import javafx.scene.control.Label;
 
 public class Controller {
         @FXML
-        private Label result;
+        public Label result;
         private long number1 = 0;
         private String operator = " ";
         private boolean start = true;
