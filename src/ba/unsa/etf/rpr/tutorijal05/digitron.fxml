@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ButtonBar?>
 <?import javafx.scene.control.Label?>
@@ -8,14 +10,20 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<Pane fx:controller="ba.unsa.etf.rpr.tutorijal05.Controller" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="367.0" prefWidth="401.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1">
-   <children>
-      <HBox layoutY="14.0" prefHeight="50.0" prefWidth="401.0">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="327.0" prefWidth="369.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ba.unsa.etf.rpr.tutorijal05.Controller">
+    <stylesheets>
+        <URL value="@dizajn.css" />
+    </stylesheets>
+    <children>
+      <HBox layoutY="14.0" prefHeight="50.0" prefWidth="362.0">
          <children>
-            <Label fx:id="result" prefHeight="50.0" prefWidth="400.0">
+            <Label fx:id="result" prefHeight="40.0" prefWidth="361.0">
                <font>
                   <Font size="24.0" />
                </font>
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
             </Label>
          </children></HBox>
       <HBox layoutY="64.0" prefHeight="50.0" prefWidth="450.0">
@@ -28,7 +36,10 @@
                 <Button minWidth="70.0" mnemonicParsing="false" onAction="#processOperator" prefHeight="25.0" text="-" />
               </buttons>
             </ButtonBar>
-         </children></HBox>
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding></HBox>
       <HBox layoutY="114.0" prefHeight="50.0" prefWidth="272.0">
          <children>
             <ButtonBar prefHeight="40.0" prefWidth="200.0">
@@ -38,7 +49,10 @@
                   <Button mnemonicParsing="false" text="9" />
               </buttons>
             </ButtonBar>
-         </children></HBox>
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding></HBox>
       <HBox layoutY="164.0" prefHeight="50.0" prefWidth="265.0">
          <children>
             <ButtonBar prefHeight="40.0" prefWidth="200.0">
@@ -48,7 +62,10 @@
                   <Button mnemonicParsing="false" text="6" />
                </buttons>
             </ButtonBar>
-         </children></HBox>
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding></HBox>
       <HBox layoutY="214.0" prefHeight="50.0" prefWidth="272.0">
          <children>
             <ButtonBar prefHeight="40.0" prefWidth="200.0">
@@ -58,7 +75,10 @@
                   <Button mnemonicParsing="false" text="3" />
                </buttons>
             </ButtonBar>
-         </children></HBox>
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding></HBox>
       <HBox layoutY="264.0" prefHeight="50.0" prefWidth="272.0">
          <children>
             <ButtonBar prefHeight="50.0" prefWidth="243.0">
@@ -66,23 +86,35 @@
                   <Button mnemonicParsing="false" prefHeight="41.0" prefWidth="105.0" text="0" />
                   <Button mnemonicParsing="false" onAction="#processOperator" prefHeight="41.0" prefWidth="105.0" text="." />
                </buttons>
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
             </ButtonBar>
          </children></HBox>
       <HBox layoutY="314.0" prefHeight="50.0" prefWidth="350.0" />
-      <VBox layoutX="282.0" layoutY="114.0" prefHeight="127.0" prefWidth="100.0">
+      <VBox layoutX="270.0" layoutY="100.0" prefHeight="127.0" prefWidth="55.0">
          <children>
-            <ButtonBar prefHeight="127.0" prefWidth="75.0">
+            <ButtonBar prefHeight="117.0" prefWidth="55.0">
               <buttons>
-                <Button lineSpacing="5.0" minWidth="67.0" mnemonicParsing="false" onAction="#processOperator" prefHeight="100.0" prefWidth="75.0" text="+" />
+                <Button lineSpacing="5.0" minWidth="55.0" mnemonicParsing="false" onAction="#processOperator" prefHeight="100.0" prefWidth="75.0" text="+">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding></Button>
               </buttons>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
             </ButtonBar>
          </children></VBox>
-      <VBox layoutX="282.0" layoutY="239.0" prefHeight="127.0" prefWidth="100.0">
+      <VBox layoutX="270.0" layoutY="214.0" prefHeight="100.0" prefWidth="55.0">
          <children>
-            <ButtonBar prefHeight="129.0" prefWidth="100.0">
-              <buttons>
-                <Button lineSpacing="5.0" minWidth="45.0" mnemonicParsing="false" onAction="#processOperator" prefHeight="100.0" prefWidth="75.0" text="=" textFill="#252121" />
-              </buttons>
+            <ButtonBar prefHeight="90.0" prefWidth="55.0">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+               <buttons>
+                <Button fx:id="jednako" lineSpacing="5.0" minWidth="55.0" mnemonicParsing="false" onAction="#processOperator" prefHeight="90.0" prefWidth="75.0" text="=" textFill="#252121" />
+               </buttons>
             </ButtonBar>
          </children></VBox>
    </children>
