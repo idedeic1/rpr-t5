@@ -17,7 +17,7 @@
     <children>
       <HBox layoutY="14.0" prefHeight="50.0" prefWidth="362.0">
          <children>
-            <Label fx:id="result" prefHeight="40.0" prefWidth="361.0">
+            <Label fx:id="result" text="${controller.labela}" prefHeight="40.0" prefWidth="361.0">
                <font>
                   <Font size="24.0" />
                </font>

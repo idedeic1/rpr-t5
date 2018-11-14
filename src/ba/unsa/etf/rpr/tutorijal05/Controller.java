@@ -23,6 +23,9 @@ public class Controller {
             return labela;
         }
 
+        public Controller(){
+            labela = new SimpleStringProperty("0");
+        }
         @FXML
         public void processNumbers(ActionEvent event){
                 if(start){
